@@ -265,6 +265,6 @@ abstract class CoreController
 
         require __DIR__ . '/../Views/layout/header_en.tpl.php';
         require __DIR__ . '/../Views/' . $viewName . '_en.tpl.php';
-        require __DIR__ . '/../Views/layout/footer_en.tpl.php';
+        require __DIR__ . '/../Views/layout/footer.tpl.php';
     }
 }

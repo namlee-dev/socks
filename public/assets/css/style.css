@@ -2,6 +2,11 @@
 :root {
     --width : 900px;
     --spacing : 1rem;
+    --color1 : #067790;
+    --color2 : #1f0690;
+    --color3 : #779006;
+    --color4 : #900677;
+
 }
 
 /* STEP General */
@@ -25,3 +30,55 @@ h1, h2 {
     color: #067790;
 }
 
+/* STEP Cookies */
+#cookiescript_injected {
+    background-color: var(--color1) !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#cookiescript_close {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#cookiescript_manage:hover
+#cookiescript_manageicon .cookiescript_gear {
+    fill: var(--color3) !important;
+}
+
+#cookiescript_accept, #cookiescript_save {
+    background-color: var(--color3) !important;
+}
+
+#cookiescript_reject {
+    background-color: var(--color4) !important;
+    border: none !important;
+}
+
+#cookiescript_reject:hover {
+    background-color: var(--color2) !important;
+}
+
+#cookiescript_accept:hover,
+#cookiescript_save:hover,
+#cookiescript_readmore:hover,
+#cookiescript_reportlink:hover,
+#cookiescript_cookiescriptlink:hover
+{
+    background-color: var(--color2) !important;
+}
+
+#cookiescript_badgetext {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#cookiescript_declaration .cookiescript_active {
+    color: var(--color3) !important;
+}
+
+#cookiescript_maintabs .cookiescript_active {
+    color: var(--color3) !important;
+}
+
+#cookiescript_categories .cookiescript_active {
+    background: var(--color3) !important;
+}

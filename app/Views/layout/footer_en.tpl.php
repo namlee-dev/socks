@@ -10,5 +10,4 @@
 <!-- Bootstrap -->
 <script src="<?= $assetsBaseUri ?>js/jquery.slim.min.js"></script>
 <script src="<?= $assetsBaseUri ?>js/bootstrap.bundle.min.js"></script>
-</body>
 </html>
