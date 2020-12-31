@@ -1,0 +1,5 @@
+# Composer
+/vendor
+
+# Config file
+/app/config.ini

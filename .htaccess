@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^socks\.maillesnam\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.socks\.maillesnam\.com$
+RewriteRule ^/?$ "https\:\/\/socks\.maillesnam\.com\/public" [R=301,L]
+
