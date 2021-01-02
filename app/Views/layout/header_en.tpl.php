@@ -8,10 +8,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="<?= $assetsBaseUri ?>css/bootstrap.min.css">
     <!-- Fonts -->
-    <link rel="stylesheet" href="<?= $assetsBaseUri ?>fonts/Leckerli-one.Regular.ttf">
-    <link rel="stylesheet" href="<?= $assetsBaseUri ?>fonts/Roboto-Bold.ttf">
-    <link rel="stylesheet" href="<?= $assetsBaseUri ?>fonts/Roboto-Italic.ttf">
-    <link rel="stylesheet" href="<?= $assetsBaseUri ?>fonts/Roboto-Regular.ttf">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <!-- Style -->
