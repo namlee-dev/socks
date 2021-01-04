@@ -40,12 +40,12 @@
                 <td>Make 1 Right (pick up the bar between the stitches from the back with the left needle, knit 1 into the front loop)</td>
             </tr>
             <tr>
-                <th scope="row">p</th>
-                <td>purl</td>
-            </tr>
-            <tr>
                 <th scope="row">p2tog</th>
                 <td>purl 2 stitches together</td>
+            </tr>
+            <tr>
+                <th scope="row">p</th>
+                <td>purl</td>
             </tr>
             <tr>
                 <th scope="row">pm</th>

@@ -73,8 +73,7 @@
         <p>R3 : * Sl.1 wyib, k1 * repeat from * to * to 2 sts. bef. the hole, Sl.1 wyib, ssk, turn</p>
         <p>R4 : Sl.1 wyif, p to 1 st. bef. the hole, p2tog, turn</p>
         <p>Repeat R3 and R4 until 1 st. remains outside the hole on each side.</p>
-        <p><strong>Cut the contrasting yarn and take the main yarn,</strong> k to 1 st. bef. the hole, ssk, DO NOT TURN, the
-            sock is now worked in the round.</p>
+        <p><strong>Cut the contrasting yarn and take the main yarn,</strong> k <strong>the contrasting stitches</strong> to 1 st. bef. the hole, ssk, DO NOT TURN, the sock is now worked in the round.</p>
         <p>K<?= $sizes[0]->getGeneral() ?> (<?= $sizes[1]->getGeneral() ?>, <?= $sizes[2]->getGeneral() ?>, <?= $sizes[3]->getGeneral() ?>, <?= $sizes[4]->getGeneral() ?>) in pattern, sm, k2tog, k to the end.</p>
     </ul>
 

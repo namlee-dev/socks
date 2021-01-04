@@ -75,7 +75,7 @@
         <p>R3 : * Gl.1 derrière, 1m. end. * répéter de * à * jusqu’à 2 m. avant le trou, Gl.1 derrière, ggt, tourner</p>
         <p>R4 : Gl.1 devant, tricoter à l’env. jusqu’à 1 m. avant la le trou, 2 m. ens. env., tourner</p>
         <p>Répéter R3 et R4 jusqu’à ce qu’il reste 1 m. à l’extérieur du trou de chaque côté.</p>
-        <p><strong>Couper le fil contrastant et prendre le fil principal,</strong> tricoter à l’end. jusqu’à 1 m. avant le trou, ggt, NE PAS TOURNER, la suite se tricote en rond.</p>
+        <p><strong>Couper le fil contrastant et prendre le fil principal,</strong> tricoter à l’end. <strong>les mailles en coloris contrastant</strong> jusqu’à 1 m. avant le trou, ggt, NE PAS TOURNER, la suite se tricote en rond.</p>
         <p>Tricoter <?= $tailles[0]->getGeneral() ?> (<?= $tailles[1]->getGeneral() ?>, <?= $tailles[2]->getGeneral() ?>, <?= $tailles[3]->getGeneral() ?>, <?= $tailles[4]->getGeneral() ?>) m. selon le motif, gm, 2 m. ens. end., tricoter à l’end. jusqu’à la fin.</p>
     </ul>
 
