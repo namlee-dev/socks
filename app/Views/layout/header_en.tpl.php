@@ -24,7 +24,7 @@
         <img class="img-fluid" src="<?= $assetsBaseUri ?>images/logo_header.png" alt="logo de mailles nam">
 
         <?php if (!empty($_SESSION['userObject'])) {
-            require __DIR__ . '/../partials/nav_en.tpl.php';
+            require __DIR__ . '/../partials/nav.tpl.php';
         } ?>
     </header>
     </div>
