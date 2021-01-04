@@ -58,7 +58,12 @@
                 <td>23</td>
                 <td>9</td>
                 <td>41/43</td>
-                <td>9/10.5 (Femme) 9.5 (Homme)</td>
+                <?php if ($lang === 'fr') : ?>
+                    <td>9/10.5 (Femme) 9.5 (Homme)</td>
+                <?php endif; ?>
+                <?php if ($lang === 'en') : ?>
+                    <td>9/10.5 (Woman) 9.5 (Man)</td>
+                <?php endif; ?>
                 <td>7.5/9</td>
             </tr>
             <tr>
