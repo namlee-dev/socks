@@ -13,7 +13,7 @@
     <p><?= $motif->getGauge()?></p>
 
     <h3>Tailles</h3>
-    <p>XS (S, M, L, XL) pour une circonférence de 17 (19, 21, 23, 25) cm ou pour les pointures 32/34 (35/37, 38/40, 41/43, 44/46)</p>
+    <p>XS (S, M, L, XL) pour une circonférence de 17 (19, 21, 23, 25) cm ou pour les pointures FR 32/34 (35/37, 38/40, 41/43, 44/46)</p>
 
     <h3>Matériel</h3>
     <p><?= $motif->getMaterial()?></p>

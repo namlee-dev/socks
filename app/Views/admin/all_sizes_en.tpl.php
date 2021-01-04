@@ -13,7 +13,7 @@
     <p><?= $pattern->getGauge() ?></p>
 
     <h3>Sizes</h3>
-    <p>XS (S, M, L, XL) for a circumference of 17 (19, 21, 23, 25) cm or for shoes sizes 32/34 (35/37, 38/40, 41/43, 44/46)</p>
+    <p>XS (S, M, L, XL) for a circumference of 6.5 (7.5, 8.5, 9, 9.5) in or for shoes sizes FR 32/34 (35/37, 38/40, 41/43, 44/46)</p>
 
     <h3>Material</h3>
     <p><?= $pattern->getMaterial() ?></p>
