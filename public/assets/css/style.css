@@ -30,6 +30,18 @@ h1, h2 {
     color: var(--color1);
 }
 
+/* STEP Navbar */
+.navbar-brand, .nav-link {
+    color: var(--color1) !important;
+    font-size: 20px !important;
+}
+
+.navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 /* STEP Cookies */
 #cookiescript_injected {
     background-color: var(--color1) !important;
