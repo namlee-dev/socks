@@ -82,12 +82,12 @@
         <li><h3>Contrefort</h3></li>
         <p>Tourner va créer un trou qui sera comblé au rang suivant.</p>
         <p>R1 : DM, <?= $taille->getFlapR1() ?> m. end. en tricotant les DM comme une seule m. en piquant dans les 2 “jambes”, ggt, tourner</p>
-        <p>R2 : Gl.1 derrière, <?= $taille->getFlapR2() ?> m. env. en tricotant les DM comme une seule m. en piquant dans les 2 “jambes”, 2 m. ens. env., tourner</p>
+        <p>R2 : Gl.1 devant, <?= $taille->getFlapR2() ?> m. env. en tricotant les DM comme une seule m. en piquant dans les 2 “jambes”, 2 m. ens. env., tourner</p>
         <p>=> <?= $taille->getFlapSide() ?> m. non tricotées de chaque côté du centre et <?= $taille->getFlapCenter() ?> m. au centre.</p>
         <p>R3 : * Gl.1 derrière, 1m. end. * répéter de * à * jusqu’à 2 m. avant le trou, Gl.1 derrière, ggt, tourner</p>
         <p>R4 : Gl.1 devant, tricoter à l’env. jusqu’à 1 m. avant la le trou, 2 m. ens. env., tourner</p>
         <p>Répéter R3 et R4 jusqu’à ce qu’il reste 1 m. à l’extérieur du trou de chaque côté.</p>
-        <p><strong>Couper le fil contrastant et prendre le fil principal,</strong> tricoter à l’end. jusqu’à 1 m. avant le trou, ggt, NE PAS TOURNER, la suite se tricote en rond.</p>
+        <p><strong>Couper le fil contrastant et prendre le fil principal,</strong> tricoter à l’end. <strong>les mailles en coloris contrastant</strong> jusqu’à 1 m. avant le trou, ggt, NE PAS TOURNER, la suite se tricote en rond.</p>
         <p>Tricoter <?= $taille->getGeneral() ?> m. selon le motif, gm, 2 m. ens. end., tricoter à l’end. jusqu’à la fin.</p>
     </ul>
 

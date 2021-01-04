@@ -80,12 +80,12 @@
 
         <li><h3>Heel Flap</h3></li>
         <p>R1 : DS, k<?= $size->getFlapR1() ?> knitting the DS as single st. by pricking in both “legs”, ssk, turn</p>
-        <p>R2 : Sl.1 wyib, p<?= $size->getFlapR2() ?> knitting the DS as single st by pricking in both “legs”., p2tog, turn</p>
+        <p>R2 : Sl.1 wyif, p<?= $size->getFlapR2() ?> knitting the DS as single st by pricking in both “legs”., p2tog, turn</p>
         <p>=> <?= $size->getFlapSide() ?> sts. not worked sts. on each side of the center and <?= $size->getFlapCenter() ?> sts. in the center.</p>
         <p>R3 : * Sl.1 wyib, k1 * repeat from * to * to 2 sts. bef. the hole, Sl.1 wyib, ssk, turn</p>
         <p>R4 : Sl.1 wyif, p to 1 st. bef. the hole, p2tog, turn</p>
         <p>Repeat R3 and R4 until 1 st. remains outside the hole on each side.</p>
-        <p><strong>Cut the contrasting yarn and take the main yarn,</strong> k to 1 st. bef. the hole, ssk, DO NOT TURN, the
+        <p><strong>Cut the contrasting yarn and take the main yarn,</strong> k <strong>the contrasting stitches</strong> 1 st. bef. the hole, ssk, DO NOT TURN, the
             sock is now worked in the round.</p>
         <p>K<?= $size->getGeneral() ?> in pattern, sm, k2tog, k to the end.</p>
     </ul>
