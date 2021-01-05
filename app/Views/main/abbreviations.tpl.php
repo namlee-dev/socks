@@ -46,7 +46,7 @@
             </tr>
             <tr>
                 <th scope="row">ggt</th>
-                <td>glisser, glisser, tricoter (glisser 2 mailles l’une après l’autre comme pour les tricoter à l’endroit puis les tricoter ensemble à l’endroit)</td>
+                <td>glisser, glisser, tricoter (glisser 2 mailles l’une après l’autre comme pour les tricoter à l’endroit, les remettre sur l’aiguille gauche et les tricoter ensemble dans le brin arrière des deux mailles )</td>
             </tr>
             </tr>
                 <th scope="row">Gl.1 derrière</th>
@@ -60,7 +60,7 @@
                 <td>glisser le marqueur</td>
             <tr>
             <tr>
-                <th scope="row">m</th>
+                <th scope="row">m.</th>
                 <td>maille(s)</td>
             <tr>
                 <th scope="row">pm</th>

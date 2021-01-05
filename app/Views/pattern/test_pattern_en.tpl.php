@@ -33,17 +33,17 @@
     <p><?= $pattern->getMaterial() ?></p>
 
     <h3>Note</h3>
-    <p>The instructions for toe, heel and rib in contrasting color are shown in bold.</p>
+    <p>Instructions for toe, heel and rib in contrasting color are shown in bold.</p>
 
     <h2 id="cast-on">Cast-on</h2>
-    <p>With the Judy's Magic Cast On, cast on 12 sts. on each needle in main color <strong>or in contrasting color</strong>.</p>
+    <p>With Judy's Magic Cast On, cast on 12 sts. on each needle in main color <strong>or in contrasting color</strong>.</p>
     <p>=> 24 sts.</p>
 
     <h2 id="toe">Toe</h2>
-    <p>Set-up row : pm for the beginning of the row, k12, pm for the beginning of the sole, k12.</p>
-    <p>R1 : * k1, yo, k to 1 st. bef. the end of the needle, yo, k1, sm *, repeat from * to *</p>
-    <p>R2 : * k1, k1tbl, k to 2 st. bef. the end of the needle, k1tbl, k1, sm *, repeat from * to *</p>
+    <p>Set-up row: pm for beginning of the row, k<?= $size->getCaston() ?>, pm for beginning of the sole, k<?= $size->getCaston() ?></p>
+    <p>R1: * k1, yo, k to 1 st bef marker, yo, k1, sm *, repeat from * to *</p>
+    <p>R2: * k1, k1tbl, k to 2 st bef marker, k1tbl, k1, sm *, repeat from * to *</p>
     <p>Repeat R1 and R2 <?= $size->getToeRepeat() ?> times in total.</p>
-    <p>=> <?= $size->getTotal() ?> sts.</p>
+    <p>=> <?= $size->getTotal() ?> sts</p>
 
 </div>
