@@ -4,16 +4,16 @@
     <h2 id="avant-de-commencer">Avant de commencer</h2>
 
     <h3>Fil</h3>
-    <p><?= $motif->getYarn()?></p>
+    <?= $motif->getYarn()?>
 
     <h3>Aiguilles</h3>
-    <p><?= $motif->getNeedles()?></p>
+    <?= $motif->getNeedles()?>
 
     <h3>Echantillon</h3>
     <p><?= $motif->getGauge()?></p>
 
     <h3>Tailles</h3>
-    <p>XS (S, M, L, XL) pour une circonférence de 17 (19, 21, 23, 25) cm ou pour les pointures FR 32/34 (35/37, 38/40, 41/43, 44/46)</p>
+    <p>XS (S, M, L, XL) pour une circonférence de 17 (19, 21, 23, 25) cm ou pour les pointures FR 32/34 (35/37, 38/40, 41/43, 44/46).</p>
 
     <h3>Matériel</h3>
     <p><?= $motif->getMaterial()?></p>
@@ -26,7 +26,7 @@
     <p>=> <?= $tailles[0]->getCastonTotal() ?> (<?= $tailles[1]->getCastonTotal() ?>, <?= $tailles[2]->getCastonTotal() ?>, <?= $tailles[3]->getCastonTotal() ?>, <?= $tailles[4]->getCastonTotal() ?>)  m.</p>
 
     <h2 id="pointe">Pointe</h2>
-    <p>Rang de mise en place : pm de début de rang, tricoter <?= $tailles[0]->getCaston() ?> (<?= $tailles[1]->getCaston() ?>, <?= $tailles[2]->getCaston() ?>, <?= $tailles[3]->getCaston() ?>, <?= $tailles[4]->getCaston() ?>) m. end., pm de début de semelle, tricoter <?= $tailles[0]->getCaston() ?> (<?= $tailles[1]->getCaston() ?>, <?= $tailles[2]->getCaston() ?>, <?= $tailles[3]->getCaston() ?>, <?= $tailles[4]->getCaston() ?>) m. end.</p>
+    <p>Rang de mise en place : tricoter <?= $tailles[0]->getCaston() ?> (<?= $tailles[1]->getCaston() ?>, <?= $tailles[2]->getCaston() ?>, <?= $tailles[3]->getCaston() ?>, <?= $tailles[4]->getCaston() ?>) m. end., pm de début de semelle, tricoter <?= $tailles[0]->getCaston() ?> (<?= $tailles[1]->getCaston() ?>, <?= $tailles[2]->getCaston() ?>, <?= $tailles[3]->getCaston() ?>, <?= $tailles[4]->getCaston() ?>) m. end., pm de début de rang.</p>
     <p>R1 : * 1 m. end., 1 jeté, tricoter à l’end. jusqu’à 1 m. du marqueur, 1 jeté, 1 m. end., gm *, répéter de * à *</p>
     <p>R2 : * 1 m. end., 1 m. end. torse (par le brin arrière), tricoter jusqu’à 2 m. du marqueur, 1 m. end. torse (par le brin arrière), 1 m. end., gm *, répéter de * à *</p>
     <p>Répéter R1 et R2 <?= $tailles[0]->getToeRepeat() ?> (<?= $tailles[1]->getToeRepeat() ?>, <?= $tailles[2]->getToeRepeat() ?>, <?= $tailles[3]->getToeRepeat() ?>, <?= $tailles[4]->getToeRepeat() ?>) fois au total.</p>
@@ -44,7 +44,7 @@
         <?= $motif->getPattern() ?>
         <?php if (!empty($motif->getChart())) : ?>
             <li><h3>Diagramme</h3></li>
-            <p>Lecture de bas en haut et de droite à gauche pour tous les rangs</p>
+            <p>Le diagramme se lit de bas en haut et de droite à gauche pour tous les rangs.</p>
             <img class="img-fluid" src="<?= $assetsBaseUri ?>images/charts/<?= $motif->getChart() ?>" alt="Chart of <?= $motif->getName() ?>">
         <?php endif; ?>
     </ul>
@@ -82,8 +82,7 @@
 
     <h2 id="jambe">Jambe</h2>
 
-    <p><?= $motif->getLegStart() ?></p>
-
+    <?= $motif->getLegStart() ?>
     <p>Tricoter <?= $tailles[0]->getTotal() ?> (<?= $tailles[1]->getTotal() ?>, <?= $tailles[2]->getTotal() ?>, <?= $tailles[3]->getTotal() ?>, <?= $tailles[4]->getTotal() ?>) m. selon le motif.</p>
     <p>Tricoter autant de rangs que nécessaire pour atteindre la hauteur souhaitée.
     <p><?= $motif->getLegEnd() ?></p>

@@ -15,10 +15,10 @@
     <h2 id="avant-de-commencer">Avant de commencer</h2>
 
     <h3>Fil</h3>
-    <p><?= $motif->getYarn()?></p>
+    <?= $motif->getYarn()?>
 
     <h3>Aiguilles</h3>
-    <p><?= $motif->getNeedles()?></p>
+    <?= $motif->getNeedles()?>
 
     <h3>Echantillon</h3>
     <p><?= $motif->getGauge()?></p>
@@ -34,7 +34,7 @@
     <p>=> <?= $taille->getCastonTotal() ?> m.</p>
 
     <h2 id="pointe">Pointe</h2>
-    <p>Rang d’installation : Placer un marqueur de début de rang, tricoter <?= $taille->getCaston() ?> m. end., placer un marqueur de début de semelle, tricoter <?= $taille->getCaston() ?> m. end.</p>
+    <p>Rang d’installation : tricoter <?= $taille->getCaston() ?> m. end., pm de début de semelle, tricoter <?= $taille->getCaston() ?> m. end., pm de début de rang.</p>
     <p>R1 : * 1 m. end., 1 jeté, tricoter à l’end. jusqu’à 1 m. de la fin de l’aig., 1 jeté, 1 m. end., gm *, répéter de * à *</p>
     <p>R2 : * 1 m. end., 1 m. end. torse (par le brin arrière), tricoter jusqu’à 2 m. de la fin de l’aig., 1 m. end. torse (par le brin arrière), 1 m. end., gm *, répéter de * à *</p>
     <p>Répéter R1 et R2 <?= $taille->getToeRepeat() ?> fois au total.</p>

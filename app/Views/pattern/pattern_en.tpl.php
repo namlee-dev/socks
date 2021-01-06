@@ -19,10 +19,10 @@
     <h2 id="before-knitting">Before knitting</h2>
 
     <h3>Yarn</h3>
-    <p><?= $pattern->getYarn() ?></p>
+    <?= $pattern->getYarn() ?>
 
     <h3>Needles</h3>
-    <p><?= $pattern->getNeedles() ?></p>
+    <?= $pattern->getNeedles() ?>
 
     <h3>Gauge</h3>
     <p><?= $pattern->getGauge() ?></p>
@@ -38,7 +38,7 @@
     <p>=> <?= $size->getCastonTotal() ?> sts.</p>
 
     <h2 id="toe">Toe</h2>
-    <p>Set-up row: pm for beginning of the row, k<?= $size->getCaston() ?>, pm for beginning of the sole, k<?= $size->getCaston() ?></p>
+    <p>Set-up row: k<?= $size->getCaston() ?>, pm for beginning of the sole, k<?= $size->getCaston() ?>, pm for beginning of the row.</p>
     <p>R1: * k1, yo, k to 1 st bef marker, yo, k1, sm *, repeat from * to *</p>
     <p>R2: * k1, k1tbl, k to 2 st bef marker, k1tbl, k1, sm *, repeat from * to *</p>
     <p>Repeat R1 and R2 <?= $size->getToeRepeat() ?> times in total.</p>
@@ -55,7 +55,7 @@
         <p><?= $pattern->getPattern() ?></p>
         <?php if (!empty($pattern->getChart())) : ?>
             <li><h3>Chart</h3></li>
-            <p>Read from bottom to top and from right to left for all rows.</p>
+            <p>Read all rows from bottom to top and from right to left.</p>
                 <img class="img-fluid" src="<?= $assetsBaseUri ?>images/charts/<?= $pattern->getChart() ?>" alt="Chart of <?= $pattern->getName() ?>">
         <?php endif; ?>
     </ul>
@@ -81,23 +81,24 @@
 
         <li><h3>Heel Flap</h3></li>
         <p>R1: DS, k<?= $size->getFlapR1() ?> knitting DS as single st by pricking in both “legs”, ssk, turn</p>
-        <p>R2: Sl.1 wyif, p<?= $size->getFlapR2() ?> purling DS as single st by pricking in both “legs”, p2tog, turn</p>
+        <p>R2: Sl1 wyif, p<?= $size->getFlapR2() ?> purling DS as single st by pricking in both “legs”, p2tog, turn</p>
         <p>=> <?= $size->getFlapSide() ?> unworked sts on each side of the center and <?= $size->getFlapCenter() ?> sts for center</p>
-        <p>R3: * Sl.1 wyib, k1 * repeat from * to * to 2 sts bef gap, Sl.1 wyib, ssk, turn</p>
-        <p>R4: Sl.1 wyif, p to 1 st bef gap, p2tog, turn</p>
+        <p>R3: * Sl1 wyib, k1 *, repeat from * to * to 2 sts bef gap, Sl1 wyib, ssk, turn</p>
+        <p>R4: Sl1 wyif, p to 1 st bef gap, p2tog, turn</p>
         <p>Repeat R3 and R4 until 1 st remains outside gap on each side.</p>
         <p><strong>Cut contrasting yarn and change for main yarn,</strong> k <strong>the contrasting sts</strong> to 1 st bef gap, ssk, DO NOT TURN, the sock is now worked in the round.</p>
         <p>Work <?= $size->getGeneral() ?> sts in pattern, sm, k2tog, k to end.</p>
     </ul>
 
     <h2 id="leg">Leg</h2>
-    <p><?= $pattern->getLegStart() ?> work <?= $size->getTotal() ?> sts in pattern.</p>
+    <?= $pattern->getLegStart() ?>
+    <p>Work <?= $size->getTotal() ?> sts in pattern.</p>
     <p>Knit as many rows as necessary to reach desired height.
     <p><?= $pattern->getLegEnd() ?></p>
 
     <h2 id="cuff">Cuff</h2>
     <p><strong>Cut main yarn and change contrasting yarn.</strong></p>
-    <p>R1: * k1tbl, p1 * repeat from * to * to the end</p>
+    <p>R1: * k1tbl, p1 *, repeat from * to * to the end</p>
     <p>Repeat R1 12 times in total.</p>
     <p>Loosely bind off with <a href="https://maillesnam.com/tutoriel/jenys-surprisingly-stretchy-binf-off/">Jeny’s Surprisingly Bind Off</a>.</p>
 

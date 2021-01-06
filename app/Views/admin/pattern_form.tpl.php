@@ -19,15 +19,14 @@
              value="<?= $editedMotif->getName() ?>">
     </div>
     <div class="form-group">
-      <label for="yarn">Fil</label>
-      <input name="yarn"
-             type="text"
-             class="form-control"
-             id="yarn"
-             value="<?= $editedMotif->getYarn() ?>">
+      <label for="yarn">Fil (en html)</label>
+      <textarea name="yarn"
+                class="form-control"
+                id="yarn"
+                rows="5"><?= $editedMotif->getYarn() ?></textarea>
     </div>
     <div class="form-group">
-      <label for="needles">Aiguilles</label>
+      <label for="needles">Aiguilles (en html)</label>
       <textarea name="needles"
                 class="form-control"
                 id="needles"
@@ -57,12 +56,11 @@
                 rows="15"><?= $editedMotif->getPattern() ?></textarea>
     </div>
     <div class="form-group">
-      <label for="legStart">Début de la jambe sur l'arrière</label>
-      <input name="legStart"
-             type="text"
-             class="form-control"
-             id="legStart"
-             value="<?= $editedMotif->getLegStart() ?>">
+      <label for="legStart">Début de la jambe sur l'arrière (en html)</label>
+      <textarea name="legStart"
+                class="form-control"
+                id="legStart"
+                rows="2"><?= $editedMotif->getLegStart() ?></textarea>
     </div>
     <div class="form-group">
       <label for="legEnd">Fin de la jambe</label>

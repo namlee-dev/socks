@@ -21,10 +21,10 @@
     <h2 id="before-knitting">Before knitting</h2>
 
     <h3>Yarn</h3>
-    <p><?= $pattern->getYarn() ?></p>
+    <?= $pattern->getYarn() ?>
 
     <h3>Needles</h3>
-    <p><?= $pattern->getNeedles() ?></p>
+    <?= $pattern->getNeedles() ?>
 
     <h3>Gauge</h3>
     <p><?= $pattern->getGauge() ?></p>
@@ -40,7 +40,7 @@
     <p>=> 24 sts.</p>
 
     <h2 id="toe">Toe</h2>
-    <p>Set-up row: pm for beginning of the row, k<?= $size->getCaston() ?>, pm for beginning of the sole, k<?= $size->getCaston() ?></p>
+    <p>Set-up row: k<?= $size->getCaston() ?>, pm for beginning of the sole, k<?= $size->getCaston() ?>, pm for beginning of the row.</p>
     <p>R1: * k1, yo, k to 1 st bef marker, yo, k1, sm *, repeat from * to *</p>
     <p>R2: * k1, k1tbl, k to 2 st bef marker, k1tbl, k1, sm *, repeat from * to *</p>
     <p>Repeat R1 and R2 <?= $size->getToeRepeat() ?> times in total.</p>

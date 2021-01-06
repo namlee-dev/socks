@@ -19,15 +19,14 @@
              value="<?= $editedPattern->getName() ?>">
     </div>
     <div class="form-group">
-      <label for="yarn">Yarn</label>
-      <input name="yarn"
-             type="text"
-             class="form-control"
-             id="yarn"
-             value="<?= $editedPattern->getYarn() ?>">
+      <label for="yarn">Yarn (in html)</label>
+      <textarea name="yarn"
+                class="form-control"
+                id="yarn"
+                rows="5"><?= $editedPattern->getYarn() ?></textarea>
     </div>
     <div class="form-group">
-      <label for="needles">Needles</label>
+      <label for="needles">Needles (in html)</label>
       <textarea name="needles"
                 class="form-control"
                 id="needles"
@@ -57,12 +56,11 @@
                 rows="15"><?= $editedPattern->getPattern() ?></textarea>
     </div>
     <div class="form-group">
-      <label for="legStart">Start back leg</label>
-      <input name="legStart"
-             type="text"
-             class="form-control"
-             id="legStart"
-             value="<?= $editedPattern->getLegStart() ?>">
+      <label for="legStart">Start back leg (in html)</label>
+      <textarea name="legStart"
+                class="form-control"
+                id="legStart"
+                rows="2"><?= $editedPattern->getLegStart() ?></textarea>
     </div>
     <div class="form-group">
       <label for="legEnd">End leg</label>

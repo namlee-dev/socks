@@ -4,16 +4,16 @@
     <h2 id="before-knitting">Before knitting</h2>
 
     <h3>Yarn</h3>
-    <p><?= $pattern->getYarn() ?></p>
+    <?= $pattern->getYarn() ?>
 
     <h3>Needles</h3>
-    <p><?= $pattern->getNeedles() ?></p>
+    <?= $pattern->getNeedles() ?>
 
     <h3>Gauge</h3>
     <p><?= $pattern->getGauge() ?></p>
 
     <h3>Sizes</h3>
-    <p>XS (S, M, L, XL) for a circumference of 6.5 (7.5, 8.5, 9, 9.5) in / 17 (19, 21, 23, 25) cm, or for shoes sizes FR 32/34 (35/37, 38/40, 41/43, 44/46)</p>
+    <p>XS (S, M, L, XL) for a circumference of 6.5 (7.5, 8.5, 9, 9.5) in / 17 (19, 21, 23, 25) cm, or for shoes sizes FR 32/34 (35/37, 38/40, 41/43, 44/46).</p>
 
     <h3>Material</h3>
     <p><?= $pattern->getMaterial() ?></p>
@@ -26,7 +26,7 @@
     <p>=> <?= $sizes[0]->getCastonTotal() ?> (<?= $sizes[1]->getCastonTotal() ?>, <?= $sizes[2]->getCastonTotal() ?>, <?= $sizes[3]->getCastonTotal() ?>, <?= $sizes[4]->getCastonTotal() ?>) sts</p>
 
     <h2 id="toe">Toe</h2>
-    <p>Set-up row: pm for beginning of the row, k<?= $sizes[0]->getCaston() ?> (<?= $sizes[1]->getCaston() ?>, <?= $sizes[2]->getCaston() ?>, <?= $sizes[3]->getCaston() ?>, <?= $sizes[4]->getCaston() ?>), pm for beginning of the sole, k<?= $sizes[0]->getCaston() ?> (<?= $sizes[1]->getCaston() ?>, <?= $sizes[2]->getCaston() ?>, <?= $sizes[3]->getCaston() ?>, <?= $sizes[4]->getCaston() ?>)</p>
+    <p>Set-up row: k<?= $sizes[0]->getCaston() ?> (<?= $sizes[1]->getCaston() ?>, <?= $sizes[2]->getCaston() ?>, <?= $sizes[3]->getCaston() ?>, <?= $sizes[4]->getCaston() ?>), pm for beginning of the sole, k<?= $sizes[0]->getCaston() ?> (<?= $sizes[1]->getCaston() ?>, <?= $sizes[2]->getCaston() ?>, <?= $sizes[3]->getCaston() ?>, <?= $sizes[4]->getCaston() ?>), pm for beginning of the row.</p>
     <p>R1: * k1, yo, k to 1 st bef marker, yo, k1, sm *, repeat from * to *</p>
     <p>R2: * k1, k1tbl, k to 2 st bef marker, k1tbl, k1, sm *, repeat from * to *</p>
     <p>Repeat R1 and R2 <?= $sizes[0]->getToeRepeat() ?> (<?= $sizes[1]->getToeRepeat() ?>, <?= $sizes[2]->getToeRepeat() ?>, <?= $sizes[3]->getToeRepeat() ?>, <?= $sizes[4]->getToeRepeat() ?>) times in total.</p>
@@ -43,7 +43,7 @@
         <p><?= $pattern->getPattern() ?></p>
         <?php if (!empty($pattern->getChart())) : ?>
             <li><h3>Chart</h3></li>
-            <p>Read from bottom to top and from right to left for all rows.</p>
+            <p>Read all rows from bottom to top and from right to left.</p>
                 <img class="img-fluid" src="<?= $assetsBaseUri ?>images/charts/<?= $pattern->getChart() ?>" alt="Chart of <?= $pattern->getName() ?>">
         <?php endif; ?>
     </ul>
@@ -55,7 +55,7 @@
         <p>R1: work <?= $sizes[0]->getGeneral() ?> (<?= $sizes[1]->getGeneral() ?>, <?= $sizes[2]->getGeneral() ?>, <?= $sizes[3]->getGeneral() ?>, <?= $sizes[4]->getGeneral() ?>) sts in pattern, sm, k1, M1L, k to 1 st bef marker, M1R, k1</p>
         <p>R2: work <?= $sizes[0]->getGeneral() ?> (<?= $sizes[1]->getGeneral() ?>, <?= $sizes[2]->getGeneral() ?>, <?= $sizes[3]->getGeneral() ?>, <?= $sizes[4]->getGeneral() ?>) sts in pattern, sm, k to end</p>
         <p>Repeat R1 and R2 <?= $sizes[0]->getGussetRepeat() ?> (<?= $sizes[1]->getGussetRepeat() ?>, <?= $sizes[2]->getGussetRepeat() ?>, <?= $sizes[3]->getGussetRepeat() ?>, <?= $sizes[4]->getGussetRepeat() ?>) times in total.</p>
-        <p>=> <?= $sizes[0]->getGussetSole() ?> (<?= $sizes[1]->getGussetSole() ?>, <?= $sizes[2]->getGussetSole() ?>, <?= $sizes[3]->getGussetSole() ?>, <?= $sizes[4]->getGussetSole() ?>) sts for sole, <?= $sizes[0]->getGussetTotal() ?> (<?= $sizes[1]->getGussetTotal() ?>, <?= $sizes[2]->getGussetTotal() ?>, <?= $sizes[3]->getGussetTotal() ?>, <?= $sizes[4]->getGussetTotal() ?>) sts in total.</p>
+        <p>=> <?= $sizes[0]->getGussetSole() ?> (<?= $sizes[1]->getGussetSole() ?>, <?= $sizes[2]->getGussetSole() ?>, <?= $sizes[3]->getGussetSole() ?>, <?= $sizes[4]->getGussetSole() ?>) sts for sole, <?= $sizes[0]->getGussetTotal() ?> (<?= $sizes[1]->getGussetTotal() ?>, <?= $sizes[2]->getGussetTotal() ?>, <?= $sizes[3]->getGussetTotal() ?>, <?= $sizes[4]->getGussetTotal() ?>) sts in total</p>
 
         <li><h3>Heel turn</h3></li>
         <p>Knit back and forth with German Short Rows.</p>
@@ -69,24 +69,24 @@
 
         <li><h3>Heel Flap</h3></li>
         <p>R1: DS, k<?= $sizes[0]->getFlapR1() ?> (<?= $sizes[1]->getFlapR1() ?>, <?= $sizes[2]->getFlapR1() ?>, <?= $sizes[3]->getFlapR1() ?>, <?= $sizes[4]->getFlapR1() ?>) knitting DS as single st by pricking in both “legs”, ssk, turn</p>
-        <p>R2: Sl.1 wyib, p<?= $sizes[0]->getFlapR2() ?> (<?= $sizes[1]->getFlapR2() ?>, <?= $sizes[2]->getFlapR2() ?>, <?= $sizes[3]->getFlapR2() ?>, <?= $sizes[4]->getFlapR2() ?>) purling DS as single st by pricking in both “legs”, p2tog, turn</p>
+        <p>R2: Sl1 wyib, p<?= $sizes[0]->getFlapR2() ?> (<?= $sizes[1]->getFlapR2() ?>, <?= $sizes[2]->getFlapR2() ?>, <?= $sizes[3]->getFlapR2() ?>, <?= $sizes[4]->getFlapR2() ?>) purling DS as single st by pricking in both “legs”, p2tog, turn</p>
         <p>=> <?= $sizes[0]->getFlapSide() ?> (<?= $sizes[1]->getFlapSide() ?>, <?= $sizes[2]->getFlapSide() ?>, <?= $sizes[3]->getFlapSide() ?>, <?= $sizes[4]->getFlapSide() ?>) unworked sts on each side of the center and <?= $sizes[0]->getFlapCenter() ?> (<?= $sizes[1]->getFlapCenter() ?>, <?= $sizes[2]->getFlapCenter() ?>, <?= $sizes[3]->getFlapCenter() ?>, <?= $sizes[4]->getFlapCenter() ?>) sts for center</p>
-        <p>R3: * Sl.1 wyib, k1 * repeat from * to * to 2 sts. bef gap, Sl.1 wyib, ssk, turn</p>
-        <p>R4: Sl.1 wyif, p to 1 st bef gap, p2tog, turn</p>
+        <p>R3: * Sl1 wyib, k1 *, repeat from * to * to 2 sts bef gap, Sl1 wyib, ssk, turn</p>
+        <p>R4: Sl1 wyif, p to 1 st bef gap, p2tog, turn</p>
         <p>Repeat R3 and R4 until 1 st remains outside gap on each side.</p>
         <p><strong>Cut contrasting yarn and change for main yarn,</strong> k <strong>the contrasting sts</strong> to 1 st bef gap, ssk, DO NOT TURN, the sock is now worked in the round.</p>
         <p>Work <?= $sizes[0]->getGeneral() ?> (<?= $sizes[1]->getGeneral() ?>, <?= $sizes[2]->getGeneral() ?>, <?= $sizes[3]->getGeneral() ?>, <?= $sizes[4]->getGeneral() ?>) sts in pattern, sm, k2tog, k to end.</p>
     </ul>
 
     <h2 id="leg">Leg</h2>
-    <p><?= $pattern->getLegStart() ?></p>
+    <?= $pattern->getLegStart() ?>
     <p>Work <?= $sizes[0]->getTotal() ?> (<?= $sizes[1]->getTotal() ?>, <?= $sizes[2]->getTotal() ?>, <?= $sizes[3]->getTotal() ?>, <?= $sizes[4]->getTotal() ?>) in pattern.</p>
     <p>Knit as many rows as necessary to reach desired height.
     <p><?= $pattern->getLegEnd() ?></p>
 
     <h2 id="cuff">Cuff</h2>
     <p><strong>Cut main yarn and change for contrasting yarn.</strong></p>
-    <p>R1: * k1tbl, p1 * repeat from * to * to the end</p>
+    <p>R1: * k1tbl, p1 *, repeat from * to * to the end</p>
     <p>Repeat R1 12 times in total.</p>
     <p>Loosely bind off with <a href="https://maillesnam.com/tutoriel/jenys-surprisingly-stretchy-binf-off/">Jeny’s Surprisingly Bind Off</a>.</p>
 

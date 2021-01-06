@@ -13,7 +13,7 @@
         </thead>
         <tbody>
             <tr>
-                <th scope="row">bef.</th>
+                <th scope="row">bef</th>
                 <td>before</td>
             </tr>
             <tr>
@@ -56,11 +56,11 @@
                 <td>Row</td>
             </tr>
             <tr>
-                <th scope="row">Sl.1 wyib</th>
+                <th scope="row">Sl1 wyib</th>
                 <td>Slip 1 stitch purlwise with yarn in back</td>
             </tr>
             <tr>
-                <th scope="row">Sl.1 wyif</th>
+                <th scope="row">Sl1 wyif</th>
                 <td>Slip 1 stitch purlwise with yarn in front</td>
             </tr>
             <tr>
@@ -72,8 +72,8 @@
                 <td>slip, slip, knit (slip 2 sts one after the other knitwise, then knit it together)</td>
             </tr>
             <tr>
-                <th scope="row">st(s).</th>
-                <td>stitche(s)</td>
+                <th scope="row">st(s)</th>
+                <td>stitch(es)</td>
             </tr>
             <tr>
                 <th scope="row">tbl</th>

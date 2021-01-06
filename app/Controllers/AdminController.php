@@ -212,12 +212,12 @@ class AdminController extends CoreController
 
             // Retrieve the data from the form
             $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-            $yarn = filter_input(INPUT_POST, 'yarn', FILTER_SANITIZE_STRING);
-            $needles = filter_input(INPUT_POST, 'needles', FILTER_SANITIZE_STRING);
+            $yarn = filter_input(INPUT_POST, 'yarn');
+            $needles = filter_input(INPUT_POST, 'needles');
             $gauge = filter_input(INPUT_POST, 'gauge', FILTER_SANITIZE_STRING);
             $material = filter_input(INPUT_POST, 'material', FILTER_SANITIZE_STRING);
             $pattern = filter_input(INPUT_POST, 'pattern');
-            $legStart = filter_input(INPUT_POST, 'legStart', FILTER_SANITIZE_STRING);
+            $legStart = filter_input(INPUT_POST, 'legStart');
             $legEnd = filter_input(INPUT_POST, 'legEnd', FILTER_SANITIZE_STRING);
             $chart = filter_input(INPUT_POST, 'chart', FILTER_SANITIZE_STRING);
 
@@ -291,12 +291,12 @@ class AdminController extends CoreController
 
             // Retrieve the data from the form
             $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-            $yarn = filter_input(INPUT_POST, 'yarn', FILTER_SANITIZE_STRING);
-            $needles = filter_input(INPUT_POST, 'needles', FILTER_SANITIZE_STRING);
+            $yarn = filter_input(INPUT_POST, 'yarn');
+            $needles = filter_input(INPUT_POST, 'needles');
             $gauge = filter_input(INPUT_POST, 'gauge', FILTER_SANITIZE_STRING);
             $material = filter_input(INPUT_POST, 'material', FILTER_SANITIZE_STRING);
             $pattern = filter_input(INPUT_POST, 'pattern');
-            $legStart = filter_input(INPUT_POST, 'legStart', FILTER_SANITIZE_STRING);
+            $legStart = filter_input(INPUT_POST, 'legStart');
             $legEnd = filter_input(INPUT_POST, 'legEnd', FILTER_SANITIZE_STRING);
             $chart = filter_input(INPUT_POST, 'chart', FILTER_SANITIZE_STRING);
 
@@ -399,12 +399,12 @@ class AdminController extends CoreController
 
             // Retrieve the data from the form
             $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-            $yarn = filter_input(INPUT_POST, 'yarn', FILTER_SANITIZE_STRING);
-            $needles = filter_input(INPUT_POST, 'needles', FILTER_SANITIZE_STRING);
+            $yarn = filter_input(INPUT_POST, 'yarn');
+            $needles = filter_input(INPUT_POST, 'needles');
             $gauge = filter_input(INPUT_POST, 'gauge', FILTER_SANITIZE_STRING);
             $material = filter_input(INPUT_POST, 'material', FILTER_SANITIZE_STRING);
             $pattern = filter_input(INPUT_POST, 'pattern');
-            $legStart = filter_input(INPUT_POST, 'legStart', FILTER_SANITIZE_STRING);
+            $legStart = filter_input(INPUT_POST, 'legStart');
             $legEnd = filter_input(INPUT_POST, 'legEnd', FILTER_SANITIZE_STRING);
             $chart = filter_input(INPUT_POST, 'chart', FILTER_SANITIZE_STRING);
 
@@ -478,12 +478,12 @@ class AdminController extends CoreController
 
             // Retrieve the data from the form
             $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-            $yarn = filter_input(INPUT_POST, 'yarn', FILTER_SANITIZE_STRING);
-            $needles = filter_input(INPUT_POST, 'needles', FILTER_SANITIZE_STRING);
+            $yarn = filter_input(INPUT_POST, 'yarn');
+            $needles = filter_input(INPUT_POST, 'needles');
             $gauge = filter_input(INPUT_POST, 'gauge', FILTER_SANITIZE_STRING);
             $material = filter_input(INPUT_POST, 'material', FILTER_SANITIZE_STRING);
             $pattern = filter_input(INPUT_POST, 'pattern');
-            $legStart = filter_input(INPUT_POST, 'legStart', FILTER_SANITIZE_STRING);
+            $legStart = filter_input(INPUT_POST, 'legStart');
             $legEnd = filter_input(INPUT_POST, 'legEnd', FILTER_SANITIZE_STRING);
             $chart = filter_input(INPUT_POST, 'chart', FILTER_SANITIZE_STRING);
 
@@ -559,6 +559,9 @@ class AdminController extends CoreController
         exit;
     }
 
+    /**
+     * Get pattern in all sizes
+     */
     public function getPattern()
     {
         if (!empty($_POST['french'])) {
