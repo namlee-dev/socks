@@ -1,5 +1,25 @@
 <div class="container">
-    <h1><?= $motif->getName() ?></h1>
+
+    <?php foreach ($alertMessageList as $alertMessage) : ?>
+        <div class="alert alert-danger" role="alert"> <?= $alertMessage ?></div>
+    <?php endforeach ?>
+
+    <h1>Votre patron</h1>
+    <p>Motif : <?= $motif->getName() ?></p>
+
+    <h2 id="sommaire">Sommaire</h2>
+    <ul>
+        <li><a href="#avant-de-commencer">Avant de commencer</a></li>
+        <li><a href="#abréviations">Abréviations</a></li>
+        <li><a href="#montage">Montage</a></li>
+        <li><a href="#pointe">Pointe</a></li>
+        <li><a href="#pied">Pied</a></li>
+        <li><a href="#motif">Motif</a></li>
+        <li><a href="#talon">Talon</a></li>
+        <li><a href="#jambe">Jambe</a></li>
+        <li><a href="#bordure">Bordure</a></li>
+        <li><a href="#finitions">Finitions</a></li>
+    </ul>
 
     <h2 id="avant-de-commencer">Avant de commencer</h2>
 
@@ -20,6 +40,9 @@
 
     <h3>Remarque</h3>
     <p>Les instructions pour une pointe, un talon et des côtes en coloris contrastant sont indiquées en gras.</p>
+
+    <h2 id="abréviations">Abréviations</h2>
+    <p>Les abréviations sont sur <a target="_blank" href="<?= $router->generate('abbreviations')?>">cette page</a>.</p>
 
     <h2 id="montage">Montage</h2>
     <p>Avec la méthode <a href="https://maillesnam.com/tutoriel/judys-magic-cast-on/">Judy's Magic Cast On</a>, monter <?= $tailles[0]->getCaston() ?> (<?= $tailles[1]->getCaston() ?>, <?= $tailles[2]->getCaston() ?>, <?= $tailles[3]->getCaston() ?>, <?= $tailles[4]->getCaston() ?>) m. sur chaque aig. en coloris principal <strong>ou en coloris contrastant.</strong></p>
@@ -100,7 +123,3 @@
     <p>Rentrer les fils et bloquer les chaussettes humides.</p>
 
 </div>
-
-<?php
-    require __DIR__ . '/../main/abbreviations.tpl.php';
-?>

@@ -5,15 +5,16 @@
 
     <h2 id="sommaire">Sommaire</h2>
     <ul>
-    <li><a href="#avant-de-commencer">Avant de commencer</a></li>
-    <li><a href="#montage">Montage</a></li>
-    <li><a href="#pointe">Pointe</a></li>
-    <li><a href="#pied">Pied</a></li>
-    <li><a href="#motif">Motif</a></li>
-    <li><a href="#talon">Talon</a></li>
-    <li><a href="#jambe">Jambe</a></li>
-    <li><a href="#bordure">Bordure</a></li>
-    <li><a href="#finitions">Finitions</a></li>
+        <li><a href="#avant-de-commencer">Avant de commencer</a></li>
+        <li><a href="#abréviations">Abréviations</a></li>
+        <li><a href="#montage">Montage</a></li>
+        <li><a href="#pointe">Pointe</a></li>
+        <li><a href="#pied">Pied</a></li>
+        <li><a href="#motif">Motif</a></li>
+        <li><a href="#talon">Talon</a></li>
+        <li><a href="#jambe">Jambe</a></li>
+        <li><a href="#bordure">Bordure</a></li>
+        <li><a href="#finitions">Finitions</a></li>
     </ul>
 
     <h2 id="avant-de-commencer">Avant de commencer</h2>
@@ -32,6 +33,9 @@
 
     <h3>Remarque</h3>
     <p>Les instructions pour une pointe, un talon et des côtes en coloris contrastant sont indiquées en gras.</p>
+
+    <h2 id="abréviations">Abréviations</h2>
+    <p>Les abréviations sont sur <a target="_blank" href="<?= $router->generate('abbreviations')?>">cette page</a>.</p>
 
     <h2 id="montage">Montage</h2>
     <p>Avec la méthode <a href="https://maillesnam.com/tutoriel/judys-magic-cast-on/">Judy's Magic Cast On</a>, monter <?= $taille->getCaston() ?> m. sur chaque aig. en coloris principal <strong>ou en coloris contrastant.</strong></p>

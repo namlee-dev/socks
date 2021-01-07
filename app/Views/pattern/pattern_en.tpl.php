@@ -5,15 +5,16 @@
 
     <h2 id="summary">Summary</h2>
     <ul>
-    <li><a href="#before-knitting">Before knitting</a></li>
-    <li><a href="#cast-on">Cast-on</a></li>
-    <li><a href="#toe">Toe</a></li>
-    <li><a href="#foot">Foot</a></li>
-    <li><a href="#pattern">Pattern</a></li>
-    <li><a href="#heel">Heel</a></li>
-    <li><a href="#leg">Leg</a></li>
-    <li><a href="#cuff">Cuff</a></li>
-    <li><a href="#finishing">Finishing</a></li>
+        <li><a href="#before-knitting">Before knitting</a></li>
+        <li><a href="#abbreviations">Abbreviations</a></li>
+        <li><a href="#cast-on">Cast-on</a></li>
+        <li><a href="#toe">Toe</a></li>
+        <li><a href="#foot">Foot</a></li>
+        <li><a href="#pattern">Pattern</a></li>
+        <li><a href="#heel">Heel</a></li>
+        <li><a href="#leg">Leg</a></li>
+        <li><a href="#cuff">Cuff</a></li>
+        <li><a href="#finishing">Finishing</a></li>
     </ul>
 
     <h2 id="before-knitting">Before knitting</h2>
@@ -33,9 +34,12 @@
     <h3>Note</h3>
     <p>Instructions for toe, heel and rib in contrasting color are shown in bold.</p>
 
+    <h2 id="abbreviations">Abbreviations</h2>
+    <p>Abbreviations are on <a target="_blank" href="<?= $router->generate('abbreviations-en')?>">this page</a>.</p>
+
     <h2 id="cast-on">Cast-on</h2>
     <p>With <a href="https://maillesnam.com/tutoriel/judys-magic-cast-on/">Judy's Magic Cast On</a>, cast on <?= $size->getCaston() ?> sts. on each needle in main color <strong>or in contrasting color</strong>.</p>
-    <p>=> <?= $size->getCastonTotal() ?> sts.</p>
+    <p>=> <?= $size->getCastonTotal() ?> sts</p>
 
     <h2 id="toe">Toe</h2>
     <p>Set-up row: k<?= $size->getCaston() ?>, pm for beginning of the sole, k<?= $size->getCaston() ?>, pm for beginning of the row.</p>
@@ -67,7 +71,7 @@
         <p>R1: work <?= $size->getGeneral() ?> sts in pattern, sm, k1, M1L, k to 1 st bef marker, M1R, k1</p>
         <p>R2: work <?= $size->getGeneral() ?> sts in pattern, sm, k to end</p>
         <p>Repeat R1 and R2 <?= $size->getGussetRepeat() ?> times in total.</p>
-        <p>=> <?= $size->getGussetSole() ?> sts for sole, <?= $size->getGussetTotal() ?> sts in total.</p>
+        <p>=> <?= $size->getGussetSole() ?> sts for sole, <?= $size->getGussetTotal() ?> sts in total</p>
 
         <li><h3>Heel turn</h3></li>
         <p>Knit back and forth with German Short Rows.</p>
@@ -97,7 +101,7 @@
     <p><?= $pattern->getLegEnd() ?></p>
 
     <h2 id="cuff">Cuff</h2>
-    <p><strong>Cut main yarn and change contrasting yarn.</strong></p>
+    <p><strong>Cut main yarn and change for contrasting yarn.</strong></p>
     <p>R1: * k1tbl, p1 *, repeat from * to * to the end</p>
     <p>Repeat R1 12 times in total.</p>
     <p>Loosely bind off with <a href="https://maillesnam.com/tutoriel/jenys-surprisingly-stretchy-binf-off/">Jeny’s Surprisingly Bind Off</a>.</p>

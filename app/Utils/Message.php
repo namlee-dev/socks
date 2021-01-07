@@ -47,4 +47,10 @@ class Message {
     public static $gauge = 'Please complete the gauge';
     public static $material = 'Please complete the material';
     public static $pattern = 'Please complete the pattern';
+
+    // Pattern
+    public static $testNotAllowedFr = 'Vous n\'avez pas accès à cette fonctionnalité';
+    public static $testNotAllowed = 'You do not have access to this feature';
+    public static $warningBTWFr = 'Attention ! Ce patron n\'est pas prévu en taille XS';
+    public static $warningBTW = 'Warning ! This pattern is not provided in size XS';
 }

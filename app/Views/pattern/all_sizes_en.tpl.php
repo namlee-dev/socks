@@ -1,5 +1,24 @@
 <div class="container">
-    <h1><?= $pattern->getName() ?></h1>
+    <?php foreach ($alertMessageList as $alertMessage) : ?>
+        <div class="alert alert-danger" role="alert"> <?= $alertMessage ?></div>
+    <?php endforeach ?>
+
+    <h1>Your pattern</h1>
+    <p>Pattern : <?= $pattern->getName() ?></p>
+
+    <h2 id="summary">Summary</h2>
+    <ul>
+        <li><a href="#before-knitting">Before knitting</a></li>
+        <li><a href="#abbreviations">Abbreviations</a></li>
+        <li><a href="#cast-on">Cast-on</a></li>
+        <li><a href="#toe">Toe</a></li>
+        <li><a href="#foot">Foot</a></li>
+        <li><a href="#pattern">Pattern</a></li>
+        <li><a href="#heel">Heel</a></li>
+        <li><a href="#leg">Leg</a></li>
+        <li><a href="#cuff">Cuff</a></li>
+        <li><a href="#finishing">Finishing</a></li>
+    </ul>
 
     <h2 id="before-knitting">Before knitting</h2>
 
@@ -20,6 +39,9 @@
 
     <h3>Note</h3>
     <p>Instructions for toe, heel and rib in contrasting color are shown in bold.</p>
+
+    <h2 id="abbreviations">Abbreviations</h2>
+    <p>Abbreviations are on <a target="_blank" href="<?= $router->generate('abbreviations-en')?>">this page</a>.</p>
 
     <h2 id="cast-on">Cast-on</h2>
     <p>With <a href="https://maillesnam.com/tutoriel/judys-magic-cast-on/">Judy's Magic Cast On</a>, cast on <?= $sizes[0]->getCaston() ?> (<?= $sizes[1]->getCaston() ?>, <?= $sizes[2]->getCaston() ?>, <?= $sizes[3]->getCaston() ?>, <?= $sizes[4]->getCaston() ?>) sts on each needle in main color <strong>or in contrasting color</strong>.</p>
@@ -95,7 +117,3 @@
     <p>Weave in all ends and wet block socks.</p>
 
 </div>
-
-<?php
-    require __DIR__ . '/../main/abbreviations_en.tpl.php';
-?>

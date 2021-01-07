@@ -5,12 +5,12 @@ namespace Socks\Controllers;
 use Socks\Models\Motif;
 use Socks\Models\Pattern;
 use Socks\Models\Size;
-
+use Socks\Utils\Message;
 
 class PatternController extends CoreController
 {
     /**
-     * Display the asked pattern in the asked size in French
+     * Display the asked pattern in French
      */
     public function getPattern()
     {
@@ -31,32 +31,62 @@ class PatternController extends CoreController
         $userRole = $currentUser->getRole();
         // dump($userRole);
 
-        // Between Two Ferns not available in size XS
-        if ($taille->getId() == '1' && $motif->getId() == '2') {
-            $this->show('pattern/not_available', [
-                'taille' => $taille,
-                'motif' => $motif,
-                ]);
-            exit;
-        }
+        if ($tailleFromForm === "Toutes les tailles") {
+            // Find the pattern
+            $motif = Motif::find($motifFromForm);
+            // Retrieve all sizes
+            $tailles = Size::findAll();
 
-        if ($userRole === 'test') {
-            // Display the pattern
-            $this->show('pattern/test_pattern', [
-                'taille' => $taille,
-                'motif' => $motif,
+            // Messages
+            $alertMessageList = [];
+
+            if ($motif->getId() === '2') {
+                $alertMessageList [] = Message::$warningBTWFr;
+            }
+
+            if ($userRole === 'test') {
+                // Display the pattern
+                $this->show('pattern/test_all_sizes', [
+                    'tailles' => $tailles,
+                    'motif' => $motif,
+                    'alertMessageList' => $alertMessageList,
                 ]);
+            } else {
+                // Display the pattern
+                $this->show('pattern/all_sizes', [
+                    'tailles' => $tailles,
+                    'motif' => $motif,
+                    'alertMessageList' => $alertMessageList,
+                ]);
+            }
         } else {
-            // Display the pattern
-            $this->show('pattern/pattern', [
-                'taille' => $taille,
-                'motif' => $motif,
-                ]);
+            // Between Two Ferns not available in size XS
+            if ($taille->getId() == '1' && $motif->getId() == '2') {
+                $this->show('pattern/not_available', [
+                    'taille' => $taille,
+                    'motif' => $motif,
+                    ]);
+                exit;
+            }
+
+            if ($userRole === 'test') {
+                // Display the pattern
+                $this->show('pattern/test_pattern', [
+                    'taille' => $taille,
+                    'motif' => $motif,
+                    ]);
+            } else {
+                // Display the pattern
+                $this->show('pattern/pattern', [
+                    'taille' => $taille,
+                    'motif' => $motif,
+                    ]);
+            }
         }
     }
 
     /**
-     * Display the asked pattern in the asked size in English
+     * Display the asked pattern in English
      */
     public function getPatternEn()
     {
@@ -77,27 +107,58 @@ class PatternController extends CoreController
         $userRole = $currentUser->getRole();
         // dump($userRole);
 
-        // Between Two Ferns not available in size XS
-        if ($size->getId() == '1' && $pattern->getId() == '2') {
-            $this->show('pattern/not_available_en', [
-                'size' => $size,
-                'pattern' => $pattern,
-                ]);
-            exit;
-        }
+        if ($sizeFromForm === "All sizes") {
+            // Find the pattern
+            $pattern = Pattern::find($patternFromForm);
+            // Retrieve all sizes
+            $sizes = Size::findAll();
 
-        if ($userRole === 'test') {
-            // Display the pattern
-             $this->showEn('pattern/test_pattern', [
-                'size' => $size,
-                'pattern' => $pattern,
+            // Messages
+            $alertMessageList = [];
+
+            if ($pattern->getId() === '2') {
+                $alertMessageList [] = Message::$warningBTW;
+            }
+
+            if ($userRole === 'test') {
+                // Display the pattern
+                $this->showEn('pattern/test_all_sizes', [
+                    'sizes' => $sizes,
+                    'pattern' => $pattern,
+                    'alertMessageList' => $alertMessageList,
                 ]);
+            } else {
+                // Display the pattern
+                $this->showEn('pattern/all_sizes', [
+                    'sizes' => $sizes,
+                    'pattern' => $pattern,
+                    'alertMessageList' => $alertMessageList,
+                ]);
+            }
         } else {
-            // Display the pattern
-            $this->showEn('pattern/pattern', [
-                'size' => $size,
-                'pattern' => $pattern,
-                ]);
+
+            // Between Two Ferns not available in size XS
+            if ($size->getId() == '1' && $pattern->getId() == '2') {
+                $this->show('pattern/not_available_en', [
+                    'size' => $size,
+                    'pattern' => $pattern,
+                    ]);
+                exit;
+            }
+
+            if ($userRole === 'test') {
+                // Display the pattern
+                $this->showEn('pattern/test_pattern', [
+                    'size' => $size,
+                    'pattern' => $pattern,
+                    ]);
+            } else {
+                // Display the pattern
+                $this->showEn('pattern/pattern', [
+                    'size' => $size,
+                    'pattern' => $pattern,
+                    ]);
+            }
         }
     }
 }

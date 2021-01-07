@@ -7,6 +7,7 @@
                 <?php  foreach ($tailleListe as $taille) : ?>
                 <option><?= $taille->getName() ?></option>
                 <?php endforeach; ?>
+                <option>Toutes les tailles</option>
             </select>
         </div>
         <div class="form-group">
@@ -32,6 +33,7 @@
                 <?php  foreach ($sizeList as $size) : ?>
                 <option><?= $size->getName() ?></option>
                 <?php endforeach; ?>
+                <option>All sizes</option>
             </select>
         </div>
         <div class="form-group">
