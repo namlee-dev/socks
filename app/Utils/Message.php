@@ -18,7 +18,7 @@ class Message {
     public static $matchPasswordFr = 'Le mot de passe et sa confirmation ne correspondent pas';
     public static $passwordFr = 'Merci de compléter le mot de passe';
     public static $confirmPasswordFr = 'Merci de compléter la confirmation du mot de passe';
-    public static $updatedProfileFr = 'Votre profil a bien été mis à jour';
+    public static $updatedProfileFr = 'Votre profil a bien été mis à jour. Si vous avez changé le courriel ou le mot de passe, veuillez vous déconnecter et vous reconnecter avec les nouveaux identifiants';
 
     public static $role = 'Merci de compléter le rôle';
 
@@ -30,7 +30,7 @@ class Message {
     public static $matchPassword = 'The password and its confirmation do not match';
     public static $password = 'Please complete the password';
     public static $confirmPassword = 'Please complete the password confirmation';
-    public static $updatedProfile = 'Your profile has been updated successfully';
+    public static $updatedProfile = 'Your profile has been updated successfully. If you have changed the email or password, please log out and log back in with the new identifiers';
 
     // Add or Edit a pattern in French
     public static $patternNameFr = 'Merci de compléter le nom';
@@ -51,6 +51,6 @@ class Message {
     // Pattern
     public static $testNotAllowedFr = 'Vous n\'avez pas accès à cette fonctionnalité';
     public static $testNotAllowed = 'You do not have access to this feature';
-    public static $warningBTWFr = 'Attention ! Ce patron n\'est pas prévu en taille XS';
-    public static $warningBTW = 'Warning ! This pattern is not provided in size XS';
+    public static $warningBTWFr = 'Ce patron n\'est pas prévu en taille XS';
+    public static $warningBTW = 'This pattern is not provided in size XS';
 }

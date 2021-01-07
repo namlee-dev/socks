@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="alert alert-danger" role="alert">The patterns are paying, which is why you do not have access to the entire pattern.</div>
+    <div class="alert alert-warning" role="alert">The patterns are paying, which is why you do not have access to the entire pattern.</div>
 
     <?php foreach ($alertMessageList as $alertMessage) : ?>
         <div class="alert alert-danger" role="alert"> <?= $alertMessage ?></div>

@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="alert alert-danger" role="alert">Les patrons sont payants, c'est pourquoi vous n'avez pas accès à l'entièreté du patron.</div>
+    <div class="alert alert-warning" role="alert">Les patrons sont payants, c'est pourquoi vous n'avez pas accès à l'entièreté du patron.</div>
 
     <?php foreach ($alertMessageList as $alertMessage) : ?>
         <div class="alert alert-danger" role="alert"> <?= $alertMessage ?></div>
