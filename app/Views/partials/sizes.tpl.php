@@ -31,48 +31,43 @@
         <tbody>
             <tr>
                     <td>XS</td>
-                    <td>17</td>
-                    <td>6.5</td>
-                    <td>32/34</td>
-                    <td>1.5/3</td>
-                    <td>13/2</td>
+                    <td>21/22.1</td>
+                    <td>8.27/8.66</td>
+                    <td>34/36</td>
+                    <td>3.5-5</td>
+                    <td>3/3.5</td>
                 </tr>
             <tr>
                 <td>S</td>
-                <td>19</td>
-                <td>7.5</td>
-                <td>35/37</td>
-                <td>4/5.5</td>
-                <td>2.5/4</td>
+                <td>22.4/23.3</td>
+                <td>8.66/9.06</td>
+                <td>37/39</td>
+                <td>5/6.5</td>
+                <td>4.5/6</td>
             </tr>
             <tr>
                 <td>M</td>
-                <td>21</td>
-                <td>8.5</td>
-                <td>38/40</td>
-                <td>6.5/8</td>
-                <td>5/6.5</td>
+                <td>23.7/24.1</td>
+                <td>9.06/9.45</td>
+                <td>40/41</td>
+                <td>7/8</td>
+                <td>6.5/7.5</td>
             </tr>
             <tr>
                 <td>L</td>
-                <td>23</td>
-                <td>9</td>
-                <td>41/43</td>
-                <?php if ($lang === 'fr') : ?>
-                    <td>9/10.5 (Femme) 9.5 (Homme)</td>
-                <?php endif; ?>
-                <?php if ($lang === 'en') : ?>
-                    <td>9/10.5 (Woman) 9.5 (Man)</td>
-                <?php endif; ?>
-                <td>7.5/9</td>
+                <td>24.5/25.3</td>
+                <td>9.45/9.84</td>
+                <td>42/44</td>
+                <td>8.5/10</td>
+                <td>8/9.5</td>
             </tr>
             <tr>
                 <td>XL</td>
-                <td>25</td>
-                <td>9.5</td>
-                <td>44/46</td>
-                <td>10/11.5</td>
-                <td>9.5/11</td>
+                <td>25.7/26.1</td>
+                <td>9.84/10.24</td>
+                <td>45/46</td>
+                <td>10.5/11.5</td>
+                <td>10/11</td>
             </tr>
         </tbody>
     </table>
