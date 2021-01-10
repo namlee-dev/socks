@@ -32,7 +32,7 @@
     <p><?= $pattern->getGauge() ?></p>
 
     <h3>Sizes</h3>
-    <p>XS (S, M, L, XL) for shoes sizes FR 34/36 (37/39, 40/41, 42/44, 45/46).</p>
+    <p>XS (S, M, L, XL) for a circumference of 7.5 (8, 8.5, 9, 9.25) in or 19 (20.5, 21.5, 22.5, 23.5) cm.</p>
 
     <h3>Material</h3>
     <p><?= $pattern->getMaterial() ?></p>
@@ -58,6 +58,8 @@
     <p><strong>Cut contrasting yarn and change for main yarn.</strong></p>
     <p>Work <?= $sizes[0]->getGeneral() ?> (<?= $sizes[1]->getGeneral() ?>, <?= $sizes[2]->getGeneral() ?>, <?= $sizes[3]->getGeneral() ?>, <?= $sizes[4]->getGeneral() ?>) sts in pattern, sm, k<?= $sizes[0]->getGeneral() ?> (<?= $sizes[1]->getGeneral() ?>, <?= $sizes[2]->getGeneral() ?>, <?= $sizes[3]->getGeneral() ?>, <?= $sizes[4]->getGeneral() ?>).</p>
     <p>Work as established to 3" / 7.5 cm bef end of the foot.</p>
+    <p>For information:</p>
+    <?php require __DIR__ . '/../partials/length.tpl.php' ?>
 
     <h2 id="pattern">Pattern</h2>
     <ul>

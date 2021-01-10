@@ -33,7 +33,7 @@
     <p><?= $motif->getGauge()?></p>
 
     <h3>Tailles</h3>
-    <p>XS (S, M, L, XL) pour les pointures FR 34/36 (37/39, 40/41, 42/44, 45/46).</p>
+    <p>XS (S, M, L, XL) pour une circonférence de 19 (20,5; 21,5; 22,5; 23,5) cm.</p>
 
     <h3>Matériel</h3>
     <p><?= $motif->getMaterial()?></p>
@@ -60,6 +60,8 @@
     <p><strong>Couper le fil contrastant et prendre le fil principal.</strong></p>
     <p>Tricoter <?= $tailles[0]->getGeneral() ?> (<?= $tailles[1]->getGeneral() ?>, <?= $tailles[2]->getGeneral() ?>, <?= $tailles[3]->getGeneral() ?>, <?= $tailles[4]->getGeneral() ?>) m. selon le motif, gm, tricoter <?= $tailles[0]->getGeneral() ?> (<?= $tailles[1]->getGeneral() ?>, <?= $tailles[2]->getGeneral() ?>, <?= $tailles[3]->getGeneral() ?>, <?= $tailles[4]->getGeneral() ?>) m. end.</p>
     <p>Tricoter ainsi jusqu’à 7,5 cm avant la fin du pied.</p>
+    <p>Pour information :</p>
+    <?php require __DIR__ . '/../partials/length.tpl.php' ?>
 
     <h2 id="motif">Motif</h2>
     <ul>

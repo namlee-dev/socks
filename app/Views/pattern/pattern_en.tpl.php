@@ -52,6 +52,8 @@
     <p><strong>Cut contrasting yarn and change for main yarn.</strong></p>
     <p>Work <?= $size->getGeneral() ?> sts in pattern, sm, k<?= $size->getGeneral() ?>.</p>
     <p>Work as established to 3" / 7.5 cm bef end of the foot.</p>
+    <p>For information:</p>
+    <?php require __DIR__ . '/../partials/length.tpl.php' ?>
 
     <h2 id="pattern">Pattern</h2>
     <ul>

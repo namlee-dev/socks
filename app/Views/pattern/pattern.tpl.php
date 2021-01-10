@@ -53,6 +53,8 @@
     <p><strong>Couper le fil contrastant et prendre le fil principal.</strong></p>
     <p>Tricoter <?= $taille->getGeneral() ?> m. selon le motif, gm, tricoter <?= $taille->getGeneral() ?> m. end.</p>
     <p>Tricoter ainsi jusqu’à 7.5 cm avant la fin du pied.</p>
+    <p>Pour information :</p>
+    <?php require __DIR__ . '/../partials/length.tpl.php' ?>
 
     <h2 id="motif">Motif</h2>
     <ul>
