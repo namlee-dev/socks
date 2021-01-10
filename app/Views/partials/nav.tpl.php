@@ -1,5 +1,5 @@
 <?php if ($lang === 'fr') : ?>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom border-info">
     <a class="navbar-brand"
        href="<?= $router->generate('home') ?>">
        Accueil
@@ -58,7 +58,7 @@
 <?php endif; ?>
 
 <?php if ($lang === 'en') : ?>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white border-bottom border-info"">
     <a class="navbar-brand"
        href="<?= $router->generate('home-en') ?>">
        Home

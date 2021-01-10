@@ -1,3 +1,5 @@
+<?php require __DIR__ . '/../partials/nav-admin.tpl.php'; ?>
+
 <div class="container my-4">
     <a href="<?= $router->generate('pattern-add') ?>" class="btn btn-success float-right">Ajouter</a>
     <h2>Liste des motifs</h2>

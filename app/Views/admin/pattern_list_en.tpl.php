@@ -1,3 +1,5 @@
+<?php require __DIR__ . '/../partials/nav-admin.tpl.php'; ?>
+
 <div class="container my-4">
     <a href="<?= $router->generate('pattern-add-en') ?>" class="btn btn-success float-right">Add</a>
     <h2>Patterns list</h2>

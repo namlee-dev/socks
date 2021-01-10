@@ -17,6 +17,10 @@ body {
     margin-bottom: 120px;
 }
 
+header {
+    margin-top: 4rem;
+}
+
 footer {
     border: 1px solid var(--color1);
 }

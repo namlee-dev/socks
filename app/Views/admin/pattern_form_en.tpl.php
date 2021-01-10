@@ -1,3 +1,5 @@
+<?php require __DIR__ . '/../partials/nav-admin.tpl.php'; ?>
+
 <div class="container">
 
 <?php foreach ($errorMessageList as $errorMessage) : ?>
