@@ -33,7 +33,8 @@
     <p><?= $motif->getGauge()?></p>
 
     <h3>Tailles</h3>
-    <p>XS (S, M, L, XL) pour une circonférence de 19 (20,5; 21,5; 22,5; 23,5) cm.</p>
+    <p>XS (S, M, L, XL) pour une circonférence de 15,5 (17,5; 20,5; 23; 25,5) cm.</p>
+    <p>Choisissez la taille sur base de la circonférence du pied, avec une aisance négative d'approximativement 2,5 cm. Par exemple, si la plante de votre pied mesure 22,5 cm de circonférence, vous devriez tricoter la taille M, qui a une circonférence finale de 20,5 cm.</p>
 
     <h3>Matériel</h3>
     <p><?= $motif->getMaterial()?></p>

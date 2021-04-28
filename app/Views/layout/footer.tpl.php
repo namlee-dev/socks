@@ -21,6 +21,6 @@
 <script src="<?= $assetsBaseUri ?>js/jquery.slim.min.js"></script>
 <script src="<?= $assetsBaseUri ?>js/bootstrap.bundle.min.js"></script>
 <!-- Cookies -->
-<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/d13546485991dc9e863c902fcc9c5bc9.js"></script>
+<!-- <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/d13546485991dc9e863c902fcc9c5bc9.js"></script> -->
 </body>
 </html>

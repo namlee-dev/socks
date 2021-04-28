@@ -32,7 +32,8 @@
     <p><?= $pattern->getGauge() ?></p>
 
     <h3>Sizes</h3>
-    <p>XS (S, M, L, XL) for a circumference of 7.5 (8, 8.5, 9, 9.25) in or 19 (20.5, 21.5, 22.5, 23.5) cm.</p>
+    <p>XS (S, M, L, XL) for a circumference of 6 (7, 8, 9, 10) in or 15.5 (17.5, 20.5, 23, 25.5) cm.</p>
+    <p>Choose size based on foot circumference, allowing approximately 1”/2.5cm of negative ease. For example, if the ball of your foot measures 9”/22.5cm in circumference, you should knit size M which has an 8”/20.5cm finished foot circumference.</p>
 
     <h3>Material</h3>
     <p><?= $pattern->getMaterial() ?></p>
